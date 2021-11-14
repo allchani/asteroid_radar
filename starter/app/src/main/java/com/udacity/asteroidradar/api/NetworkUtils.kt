@@ -55,3 +55,7 @@ private fun getNextSevenDaysFormattedDates(): ArrayList<String> {
 
     return formattedDateList
 }
+
+fun getTodayDate(): String {
+    return getNextSevenDaysFormattedDates()[0]
+}
