@@ -50,7 +50,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     // For Picture of the day
     val pictureOfTheDay: LiveData<PictureOfDay> = Transformations.map(database.asteroidDao.getPicture()){
-        it.asDomainModel()
+        it?.asDomainModel()
     }
 
 
